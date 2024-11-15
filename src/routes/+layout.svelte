@@ -22,5 +22,11 @@
 	}
 	:global(*) {
 		@apply text-white;
+		@apply overflow-x-hidden;
+	}
+	:global(p) {
+		@apply text-white;
+		@apply text-lg;
+		@apply m-3;
 	}
 </style>
