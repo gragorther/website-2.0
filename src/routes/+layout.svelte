@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 	injectAnalytics();
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	injectSpeedInsights();
 	import '../app.css';
 	let navclass;
 	navclass =
