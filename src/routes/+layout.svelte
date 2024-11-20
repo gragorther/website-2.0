@@ -50,7 +50,7 @@
 		@apply text-blue-400 hover:text-blue-200;
 	}
 	:global(h2) {
-		@apply shared-properties text-4xl from-blue-500 to-pink-700;
+		@apply shared-properties text-4xl from-orange-500 to-pink-700;
 	}
 	/*:global(li) {
 		@apply border border-lime-400 rounded-lg font-extrabold rounded-full;
