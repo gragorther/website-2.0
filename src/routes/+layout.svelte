@@ -16,6 +16,7 @@
 		<a href="/gallery" class={navclass}>Gallery</a>
 		<a href="/blog" class={navclass}>Blog</a>
 		<a href="/donations" class={navclass}>Donations</a>
+		<a href="/projects" class={navclass}>projects</a>
 	</div>
 </nav>
 <slot />
@@ -55,9 +56,7 @@
 	/*:global(li) {
 		@apply border border-lime-400 rounded-lg font-extrabold rounded-full;
 	}*/
-	:global(button) {
-		@apply rounded-full bg-purple-400 p-5 text-white hover:text-white;
-	}
+
 	:global(.pill-button) {
 		@apply text-white hover:text-white bg-purple-400 rounded-full px-4 py-2 hover:bg-purple-500;
 	}
