@@ -16,7 +16,7 @@
 		<a href="/gallery" class={navclass}>Gallery</a>
 		<a href="/blog" class={navclass}>Blog</a>
 		<a href="/donations" class={navclass}>Donations</a>
-		<a href="/projects" class={navclass}>projects</a>
+		<a href="/stuff_i_host" class={navclass}>Stuff I host</a>
 	</div>
 </nav>
 <slot />
@@ -28,7 +28,7 @@
 
 	@layer base {
 		.shared-properties {
-			@apply bg-gradient-to-r  text-transparent bg-clip-text font-extrabold mx-auto my-5 text-center leading-relaxed;
+			@apply bg-gradient-to-r  text-transparent bg-clip-text font-extrabold mx-auto my-5 text-center;
 		}
 	}
 	:global(body) {
@@ -51,7 +51,7 @@
 		@apply text-blue-400 hover:text-blue-200;
 	}
 	:global(h2) {
-		@apply shared-properties text-4xl from-orange-500 to-pink-700;
+		@apply shared-properties text-4xl from-orange-500 to-pink-700 leading-relaxed;
 	}
 	/*:global(li) {
 		@apply border border-lime-400 rounded-lg font-extrabold rounded-full;

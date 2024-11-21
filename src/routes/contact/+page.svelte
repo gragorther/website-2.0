@@ -30,3 +30,22 @@
 		/>
 	</li>
 </ul>
+<h2>Social media</h2>
+<ul>
+	<li>
+		<ClickableButton
+			url="https://gregtech.eu/u/gregor"
+			label="Lemmy"
+			imgSrc="lemmy.png"
+			imgAlt="Lemmy logo"
+		/>
+	</li>
+	<li>
+		<ClickableButton
+			url="https://toot.si/@gregortactac"
+			label="Mastodon"
+			imgSrc="Mastodon_logotype_(simple)_new_hue.svg"
+			imgAlt=""
+		/>
+	</li>
+</ul>
