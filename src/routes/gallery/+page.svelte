@@ -37,7 +37,7 @@
 		{ src: 'roze3.opti.webp', alt: 'Even more flowers from Svalbard' },
 		{
 			src: 'svalbard_chicken.opti.webp',
-			alt: 'The Svalbard chicken, which struggles to fly'
+			alt: 'The Svalbard chicken, which struggles to fly due to its chomnkness'
 		},
 		{
 			src: 'leppogled.opti.webp',
