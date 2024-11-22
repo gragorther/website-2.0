@@ -6,7 +6,7 @@
 	import '../app.css';
 
 	let navclass =
-		'rounded-lg bg-purple-400 text-lg lg:text-2xl flex-grow text-center mr-2 hover:bg-purple-700 text-white hover:text-white p-2';
+		'rounded-lg bg-purple-400 text-xl p-2 text-center hover:bg-purple-700 text-white flex-grow mr-2 sm:text-lg sm:p-3 lg:text-xl lg:p-0 ';
 </script>
 
 <nav class="rounded-lg m-4">
@@ -33,7 +33,7 @@
 
 	@layer base {
 		.shared-properties {
-			@apply bg-gradient-to-r text-transparent bg-clip-text font-extrabold mx-auto my-5 text-center;
+			@apply bg-gradient-to-r text-transparent bg-clip-text font-extrabold mx-auto my-5 text-center p-2;
 		}
 	}
 	:global(body) {
@@ -69,5 +69,8 @@
 	/* Make navigation adapt to smaller screens */
 	:global(nav div) {
 		@apply flex flex-wrap gap-2; /* Allow wrapping and spacing for smaller screens */
+	}
+	:global(li) {
+		@apply mx-4 text-lg;
 	}
 </style>

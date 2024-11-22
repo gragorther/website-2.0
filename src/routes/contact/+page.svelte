@@ -9,8 +9,8 @@
 		<ClickableButton
 			url="https://matrix.to/#/@gregor:gregtech.eu"
 			label="Matrix"
-			imgSrc="element.svg"
-			imgAlt="Element logo"
+			imgSrc="matrix.svg"
+			imgAlt="Matrix logo"
 		/>
 	</li>
 	<li>
