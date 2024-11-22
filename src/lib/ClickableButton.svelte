@@ -8,7 +8,7 @@
 
 <button
 	on:click={() => (window.location.href = url)}
-	class={`inline-flex items-center p-2 bg-blue-500 text-white rounded hover:bg-blue-600 ${classes}`}
+	class={`inline-flex items-center p-2 pr-3 sm:pr-0 bg-blue-500 text-white rounded hover:bg-blue-600 ${classes}`}
 >
 	{#if imgSrc}
 		<img src={imgSrc} alt={imgAlt} class="w-5 h-5 rounded-full flex-shrink-0" />
