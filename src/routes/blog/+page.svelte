@@ -22,6 +22,8 @@
 	];
 </script>
 
+<title>Gregtech - blog</title>
+<h1>Blog</h1>
 <div class="flex flex-wrap gap-6 justify-center">
 	{#each posts as post}
 		<Blog link={post.link} image={post.image} title={post.title} previewText={post.previewText} />

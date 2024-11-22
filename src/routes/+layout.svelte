@@ -16,7 +16,6 @@
 		<a href="/contact" class={navclass}>Contact</a>
 		<a href="/gallery" class={navclass}>Gallery</a>
 		<a href="/blog" class={navclass}>Blog</a>
-		<a href="/donations" class={navclass}>Donations</a>
 		<a href="/stuff_i_host" class={navclass}>Stuff I host</a>
 	</div>
 </nav>
