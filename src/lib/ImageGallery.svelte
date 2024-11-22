@@ -23,7 +23,3 @@
 		</div>
 	{/each}
 </div>
-
-<style>
-	/* Optional custom styles if needed */
-</style>

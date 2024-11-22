@@ -8,14 +8,10 @@
 
 <button
 	on:click={() => (window.location.href = url)}
-	class={`flex items-center space-x-2 p-2 bg-blue-500 text-white rounded hover:bg-blue-600${classes} m-3`}
+	class={`inline-flex items-center space-x-2 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 ${classes} m-3`}
 >
 	{#if imgSrc}
-		<img src={imgSrc} alt={imgAlt} class="w-5 h-5 rounded-full" />
+		<img src={imgSrc} alt={imgAlt} class="w-5 h-5 rounded-full flex-shrink-0" />
 	{/if}
-	<span>{label}</span>
+	<span class="whitespace-nowrap">{label}</span>
 </button>
-
-<style>
-	/* Add any additional scoped styles here if needed */
-</style>

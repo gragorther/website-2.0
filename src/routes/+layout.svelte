@@ -20,7 +20,11 @@
 		<a href="/stuff_i_host" class={navclass}>Stuff I host</a>
 	</div>
 </nav>
-<slot />
+<div class="min-h-screen flex flex-col">
+	<main class="flex-grow pb-10">
+		<slot />
+	</main>
+</div>
 
 <style lang="postcss">
 	@tailwind base;
@@ -59,7 +63,7 @@
 
 	/* Responsive navigation layout */
 	:global(ul) {
-		@apply flex flex-col lg:flex-row items-center justify-center;
+		@apply flex flex-row items-center justify-center;
 	}
 
 	/* Make navigation adapt to smaller screens */
