@@ -1,5 +1,5 @@
-<h1>GregTech</h1>
-
+<h1>Gregtech</h1>
+<title>Gregtech</title>
 <p>
 	I'm an enjoyer of FOSS, especially Linux. I like gaming a lot. I play Minecraft, CS2, Scarlet
 	Hollow, which I speedran in a day and a whole lot of other games. All of these games, with the

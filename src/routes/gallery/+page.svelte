@@ -46,6 +46,7 @@
 	];
 </script>
 
+<title>Gregtech - Gallery</title>
 <h1 class="text-4xl font-bold text-center my-5">Gallery</h1>
 
 <ImageGallery images={galleryImages} columns={3} gap="1rem" />

@@ -22,7 +22,7 @@
 	];
 </script>
 
-<title>Gregtech - blog</title>
+<title>Gregtech - Blog</title>
 <h1>Blog</h1>
 <div class="flex flex-wrap gap-6 justify-center">
 	{#each posts as post}

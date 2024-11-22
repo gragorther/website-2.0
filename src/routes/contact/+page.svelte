@@ -2,6 +2,7 @@
 	import ClickableButton from '$lib/ClickableButton.svelte';
 </script>
 
+<title>Gregtech - Contact</title>
 <h1>Links</h1>
 <h2>Contact</h2>
 <ul>
