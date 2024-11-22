@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let images: { src: string; alt: string }[] = [];
 	export let columns: number = 3;
-	export let gap: string = '1rem';
+	export const gap: string = '1rem';
 </script>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

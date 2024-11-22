@@ -45,7 +45,7 @@
 			url="https://toot.si/@gregortactac"
 			label="Mastodon"
 			imgSrc="Mastodon_logotype_(simple)_new_hue.svg"
-			imgAlt=""
+			imgAlt="Mastodon logo"
 		/>
 	</li>
 </ul>
