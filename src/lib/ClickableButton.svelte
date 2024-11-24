@@ -11,7 +11,7 @@
 	class={`inline-flex items-center p-2 pr-3 sm:pr-0 bg-blue-500 text-white rounded hover:bg-blue-600 ${classes}`}
 >
 	{#if imgSrc}
-		<img src={imgSrc} alt={imgAlt} class="w-5 h-5 rounded-full flex-shrink-0" />
+		<img src={imgSrc} alt={imgAlt} class="w-5 h-5 flex-shrink-0" />
 	{/if}
 	<span class="whitespace-nowrap pr-4 pl-1">{label}</span>
 </button>
