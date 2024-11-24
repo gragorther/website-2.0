@@ -15,7 +15,7 @@
 	>
 		<!-- Blog Post Image -->
 		{#if image}
-			<img src={image} alt="Blog post" class="w-full h-64 object-cover rounded-t-lg" />
+			<img src={image} alt="Blog post" class="w-full h-64 object-contain rounded-t-lg" />
 		{/if}
 
 		<!-- Blog Title -->
