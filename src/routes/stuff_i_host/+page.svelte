@@ -4,7 +4,7 @@
 
 <title>Gregtech - Stuff I Host</title>
 <h1>Stuff I host</h1>
-<h2>No-contact registration</h2>
+<h2>Zero-contact registration</h2>
 <ul>
 	<li>
 		<ClickableButton
