@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+	import BlogImage from '$lib/BlogImage.svelte';
 	import BlogPost from '$lib/BlogPost.svelte';
 </script>
 

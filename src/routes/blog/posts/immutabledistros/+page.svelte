@@ -1,5 +1,7 @@
-<script>
+<script lang="ts">
+	import BlogImage from '$lib/BlogImage.svelte';
 	import BlogPost from '$lib/BlogPost.svelte';
+	import DualImageTitle from '$lib/DualImageTitle.svelte';
 </script>
 
 <BlogPost title="Immutable Linux Distributions" date="2024">
@@ -27,34 +29,26 @@
 		I tested OpenSUSE Aeon, Fedora Kinoite (which was my daily driver), BlendOS (to which I switched
 		a few days ago) and VanillaOS.
 	</p>
-	<h2>VanillaOS</h2>
-	<img
-		src="vanillaos-logo-icon.svg"
-		alt="VanillaOS not booting due to amdgpu error"
-		style="width: 25%; height: auto"
+	<DualImageTitle
+		title="VanillaOS"
+		imgSrc="/vanillaos-logo-icon.svg"
+		imgAlt="VanillaOS logo"
+		headingLevel="h2"
 	/>
+	<BlogImage src="/vanillaos_error.jpg" alt="VanillaOS not booting due to amdgpu error" />
 	<p>
 		The VanillaOS installer refused to boot in my case, showing some amdgpu error, so there isn't
 		much to discuss here. VanillaOS is based on Debian Sid, which is an experimental branch of
 		Debian, so the error might be due to experimental software.
 	</p>
-	<img
-		src="vanillaos_error.jpg"
-		alt="VanillaOS not booting due to amdgpu error"
-		class="imgmobile"
-	/>
+	<BlogImage src="/vanillaos_error.jpg" alt="VanillaOS not booting due to amdgpu error" />
 	<p>
 		VanillaOS distributes security updates as Vib modules, you can learn more about them at <a
 			href="https://vib.vanillaos.org/">https://vib.vanillaos.org/</a
 		>. Everything in VanillaOS is a container, even the default shell opens a Debian container.
 	</p>
-	<img
-		src="discordscreenshoit.jpg"
-		alt="screenshot from VanillaOS's Discord community"
-		class="imgmobile"
-	/>
-	<h2>OpenSUSE Aeon</h2>
-	<img src="175px-Aeon-inline.svg.png" alt="Opensuse Aeon logo" style="width: 50%; height: auto" />
+	<BlogImage src="/discordscreenshoit.jpg" alt="screenshot from VanillaOS's Discord community" />
+	<DualImageTitle title="OpenSUSE Aeon" imgSrc="/Aeon-round-logo.png" imgAlt="OpenSUSE Aeon logo" />
 	<p>
 		Aeon is very similar to Fedora Kinoite, with the difference that it uses GNOME instead of KDE.
 		It has distrobox preinstalled, so that you can install apps that aren't packaged with flatpak or
@@ -65,8 +59,7 @@
 		as Kalpa is still in alpha. I do not recommend using either of them, because they are not as
 		feature complete as Fedora Silverblue and BlendOS.
 	</p>
-	<h2>Fedora Kinoite</h2>
-	<img src="fedora-kinoite-dark.png" alt="Fedora Kinoite logo" style="width: 50%; height: auto" />
+	<DualImageTitle title="Fedora Kinoite" imgSrc="/kinoite.png" imgAlt="" headingLevel="h2" />
 	<p>
 		Fedora Kinoite is a KDE spin of Fedora Silverblue. It uses rpm-ostree for the system package
 		management, through which you can install packages on the system, not in a container or Flatpak,
@@ -75,8 +68,7 @@
 		absolutely need to be on the system level, such as VPN applications or Virtualbox kernel
 		components..
 	</p>
-	<h2>BlendOS</h2>
-	<img src="blendos_logo.svg" alt="BlendOS logo" style="width: 20%; height: auto" />
+	<DualImageTitle title="BlendOS" imgSrc="/blendos_logo.svg" imgAlt="BlendOS logo" />
 	<p>
 		BlendOS is quite similar to VanillaOS, with the difference that it is based on Arch. It has the
 		ability to run apps in containers, though this can be added to any other distro with <a
@@ -89,11 +81,7 @@
 		rollbacks, which is the main point of immutable distros, so I find that quite silly. It is
 		developed mostly by Rudra Saraswat, a 14-year-old, which is...impressive.
 	</p>
-	<img
-		src="container_management_in_blendos.png"
-		alt="BlendOS container management app"
-		class="imgmobile"
-	/>
+	<BlogImage src="/container_management_in_blendos.png" alt="BlendOS container management app" />
 	<h2>Conclusion</h2>
 	<p>
 		Immutable distros have their perks, but there is also an alternative to it: btrfs snapper. It

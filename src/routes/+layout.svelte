@@ -27,8 +27,6 @@
 
 <style lang="postcss">
 	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
 
 	@layer base {
 		.shared-properties {
