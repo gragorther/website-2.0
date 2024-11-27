@@ -1,10 +1,10 @@
 <script lang="ts">
 	import ResultBox from '$lib/ResultBox.svelte';
-	import AppBox from '$lib/ResultBox.svelte';
-	let stevilo = 3;
+	let stevilo: number;
 	let sodo: boolean;
 	let vsota: number;
 	let seznamDeliteljev: number[] = [];
+
 	function jeSodo(num: number) {
 		return num % 2 == 0;
 	}
@@ -34,24 +34,23 @@
 </script>
 
 <h1>Števila</h1>
-<div class="flex"></div>
-<div class="flex flex-col justify-center gap-2 items-center min-h-screen">
+<div class="flex flex-col justify-center gap-2 items-center min-h-screen text-center">
 	<input
 		class="border-2 text-black border-pink-400 rounded-full text-center p-4 text-4xl"
 		bind:value={stevilo}
 	/>
-	<div class="flex flex-row">
+	<div class="flex flex-row gap-4 flex-wrap justify-center items-start text-center">
 		<ResultBox>
 			<p>Število je:</p>
 			<p>{sodo ? 'sodo' : 'liho'}</p>
 		</ResultBox>
 		<ResultBox>
 			<p>Seznam deliteljev:</p>
-			<ul>
+			<div class="flex flex-wrap gap-1">
 				{#each seznamDeliteljev as st}
-					<li>{st}</li>
+					<span class="bg-pink-200 text-pink-800 rounded text-sm">{st}</span>
 				{/each}
-			</ul>
+			</div>
 		</ResultBox>
 		<ResultBox>
 			<p>Vsota deliteljev je: {vsota}</p>

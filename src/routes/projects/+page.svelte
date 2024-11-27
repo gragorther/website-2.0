@@ -8,4 +8,7 @@
 	<li>
 		<ClickableButton url="/projects/to-do" label="To-do list" />
 	</li>
+	<li>
+		<ClickableButton url="/projects/numbers" label="Info about a number" />
+	</li>
 </ul>
