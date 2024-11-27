@@ -17,6 +17,7 @@
 		<a href="/gallery" class={navclass}>Gallery</a>
 		<a href="/blog" class={navclass}>Blog</a>
 		<a href="/stuff_i_host" class={navclass}>Stuff I host</a>
+		<a href="/projects" class={navclass}>Projects</a>
 	</div>
 </nav>
 <div class="min-h-screen flex flex-col">
@@ -41,7 +42,7 @@
 	}
 
 	:global(p) {
-		@apply text-lg my-3 mx-4 lg:mx-40; /* Add smaller margins on mobile */
+		@apply text-lg my-3 mx-4 lg:mx-40 text-center; /* Add smaller margins on mobile */
 	}
 	:global(h1) {
 		@apply shared-properties text-4xl lg:text-6xl from-pink-500 to-violet-500 leading-relaxed;
