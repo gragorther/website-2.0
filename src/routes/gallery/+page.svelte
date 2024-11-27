@@ -42,7 +42,15 @@
 		{
 			src: 'leppogled.opti.webp',
 			alt: 'A lake from the Lofoten islands, Norway'
-		}
+		},
+		{
+			src: '/macek_rolling.jpeg',
+			alt: 'A cat rolling on the floor'
+		},
+		{ src: '/macek_opazi.jpeg', alt: 'A cat looking at the camera surprised' },
+		{ src: 'macek_on_the_floor.jpeg', alt: 'A cat on the floor' },
+
+		{ src: 'macek_china.jpeg', alt: 'cat' }
 	];
 </script>
 

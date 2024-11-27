@@ -12,7 +12,7 @@
 			By Gregor Podjed on {date}. Licensed under
 			<a class="text-sm" href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1"
 				>CC BY-SA 4.0</a
-			>
+			>.
 		</p>
 	</header>
 
