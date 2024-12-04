@@ -11,4 +11,7 @@
 	<li>
 		<ClickableButton url="/projects/numbers" label="Info about a number" />
 	</li>
+	<li>
+		<ClickableButton url="/projects/tvitr" label="Tvitr"></ClickableButton>
+	</li>
 </ul>

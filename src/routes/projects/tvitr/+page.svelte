@@ -1,0 +1,28 @@
+<script lang="ts">
+	import type { UserPost } from '$lib';
+	import Post from '$lib/Post.svelte';
+
+	let posts: UserPost[] = [{ text: 'Hello World!', timestamp: Date.now(), likes: 0 }];
+	let newPost: string = '';
+	function add() {
+		posts = [
+			{
+				text: newPost,
+				timestamp: Date.now(),
+				likes: 0
+			},
+			...posts
+		];
+		newPost = '';
+	}
+</script>
+
+<div class="justify-center flex pb-3">
+	<input type="text" bind:value={newPost} class="rounded-full text-black p-2" />
+	<button class="pill-button" on:click={add}>Post</button>
+</div>
+<div class="flex flex-wrap">
+	{#each posts as post}
+		<Post {post} />
+	{/each}
+</div>
