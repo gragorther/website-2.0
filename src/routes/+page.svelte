@@ -1,4 +1,8 @@
-<h1>Gregtech</h1>
+<script>
+	import ColorChangingTitle from '$lib/ColorChangingTitle.svelte';
+</script>
+
+<ColorChangingTitle>Gregtech</ColorChangingTitle>
 <title>Gregtech</title>
 <p>
 	I'm an enjoyer of FOSS, especially Linux. I like gaming a lot. I play Minecraft, CS2, Scarlet
