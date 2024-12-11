@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { UserPost } from '$lib';
+	import PageTitle from '$lib/PageTitle.svelte';
 	import Post from '$lib/Post.svelte';
 
 	let posts: UserPost[] = [];
@@ -17,6 +18,7 @@
 	}
 </script>
 
+<PageTitle title="Tvitr" />
 <div class="justify-center flex pb-3">
 	<input type="text" bind:value={newPost} class="rounded-full text-black p-2" />
 	<button class="pill-button" on:click={add}>Post</button>

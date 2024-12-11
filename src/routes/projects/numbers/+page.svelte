@@ -1,4 +1,5 @@
 <script lang="ts">
+	import PageTitle from '$lib/PageTitle.svelte';
 	import ResultBox from '$lib/ResultBox.svelte';
 	let stevilo: number;
 	let sodo: boolean;
@@ -33,7 +34,7 @@
 	}
 </script>
 
-<h1>Števila</h1>
+<PageTitle title="Števila" />
 <div class="flex flex-col justify-center gap-2 items-center min-h-screen text-center">
 	<input
 		class="border-2 text-black border-pink-400 rounded-full text-center p-4 text-4xl"

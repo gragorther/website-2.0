@@ -1,8 +1,9 @@
 <script>
 	import ClickableButton from '$lib/ClickableButton.svelte';
+	import PageTitle from '$lib/PageTitle.svelte';
 </script>
 
-<h1>My projects</h1>
+<PageTitle title="Projects" />
 <p>Stuff I made at a coding class</p>
 <ul>
 	<li>

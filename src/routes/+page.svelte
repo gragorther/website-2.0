@@ -1,9 +1,9 @@
 <script>
 	import ColorChangingTitle from '$lib/ColorChangingTitle.svelte';
+	import PageTitle from '$lib/PageTitle.svelte';
 </script>
 
-<ColorChangingTitle>Gregtech</ColorChangingTitle>
-<title>Gregtech</title>
+<PageTitle title="GregTech" />
 <p>
 	I'm an enjoyer of FOSS, especially Linux. I like gaming a lot. I play Minecraft, CS2, Scarlet
 	Hollow, which I speedran in a day and a whole lot of other games. All of these games, with the

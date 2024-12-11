@@ -1,5 +1,6 @@
 <script>
 	import ImageGallery from '$lib/ImageGallery.svelte';
+	import PageTitle from '$lib/PageTitle.svelte';
 
 	const galleryImages = [
 		{ src: 'optimized/a_bird.webp', alt: 'A bird from Valencia' },
@@ -54,7 +55,6 @@
 	];
 </script>
 
-<title>Gregtech - Gallery</title>
-<h1 class="text-4xl font-bold text-center my-5">Gallery</h1>
+<PageTitle title="Gallery" />
 
 <ImageGallery images={galleryImages} columns={3} gap="1rem" />

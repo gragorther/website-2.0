@@ -1,9 +1,9 @@
 <script>
 	import ClickableButton from '$lib/ClickableButton.svelte';
+	import PageTitle from '$lib/PageTitle.svelte';
 </script>
 
-<title>Gregtech - Stuff I Host</title>
-<h1>Stuff I host</h1>
+<PageTitle title="Stuff I host" />
 <h2>Zero-contact registration</h2>
 <ul>
 	<li>

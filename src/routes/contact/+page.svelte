@@ -1,9 +1,9 @@
 <script>
 	import ClickableButton from '$lib/ClickableButton.svelte';
+	import PageTitle from '$lib/PageTitle.svelte';
 </script>
 
-<title>Gregtech - Contact</title>
-<h1>Links</h1>
+<PageTitle title="Links" />
 <h2>Contact</h2>
 <ul>
 	<li>
