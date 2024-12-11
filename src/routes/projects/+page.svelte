@@ -6,6 +6,7 @@
 <PageTitle title="Projects" />
 <p>Stuff I made at a coding class</p>
 <ul>
+	<li><ClickableButton url="/projects/writer" label="Writer" /></li>
 	<li>
 		<ClickableButton url="/projects/to-do" label="To-do list" />
 	</li>
