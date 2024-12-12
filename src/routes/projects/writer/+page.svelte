@@ -7,7 +7,7 @@
 		return '#' + ((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0');
 	}
 	let i;
-	function firstLetterUppercase(input) {
+	function firstLetterUppercase(input: string) {
 		var res = '';
 		for (var i = 0; i < input.length; i++) {
 			// Make every first character uppercase and second character lowercase alternately
@@ -19,9 +19,9 @@
 </script>
 
 <PageTitle title="Writer" />
-<div class=" overflow-auto p-4 flex flex-col text-black items-center justify-center">
+<div class=" overflow-x-hidden p-4 flex flex-col text-black items-center justify-center">
 	<textarea bind:value={text} class="w-1/2 border-2 p-2 border-violet-600 rounded-lg"></textarea>
-	<div class="grid grid-cols-4 gap-4">
+	<div class="flex flex-wrap gap-2 justify-center">
 		<button class="pill-button" on:click={() => (text = firstLetterUppercase(text))}>MoCkIfY</button
 		>
 		<button class="pill-button" on:click={() => (text = text.toUpperCase())}>UPPER</button>
