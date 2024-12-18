@@ -17,5 +17,6 @@
 		<li>
 			<ClickableButton url="/projects/tvitr" label="Tvitr"></ClickableButton>
 		</li>
+		<li><ClickableButton url="/projects/exercises" label="Exercises" /></li>
 	</div>
 </ul>
