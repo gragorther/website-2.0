@@ -25,7 +25,7 @@
 		price: number;
 	};
 	// Priprava spremenljivk
-	let items: Item[] = $state([{ name: 'Banana', price: 10 }]); // seznam vseh izdelkov
+	let items: Item[] = $state([]); // seznam vseh izdelkov
 	let newItemName = $state(''); // ime novega izdelka
 	let newItemPrice = $state(0); // cena novega izdelka
 
@@ -51,10 +51,8 @@
 		return sestevek;
 	}
 
-	let total = $state(0);
-	run(() => {
-		total = sumItemsPrice(items);
-	});
+	//	let total = $state(0);
+	let total = $derived(sumItemsPrice(items));
 </script>
 
 <PageTitle title="Shopping list" />
