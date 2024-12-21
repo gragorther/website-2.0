@@ -1,11 +1,3 @@
-# Uporaba
+# A silly little website
 
-1. Inštaliraj projekt:
-```
-pnpm i
-```
-
-2. Zaženi projekt:
-```
-pnpm dev
-```
+Hi there, thanks for checking out my (checks notes) beautiful code. It's for a silly little blog page of mine.
