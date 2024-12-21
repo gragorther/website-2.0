@@ -30,6 +30,7 @@
 		{@render children?.()}
 	</main>
 </div>
+
 <style lang="postcss">
 	@tailwind base;
 
@@ -46,7 +47,7 @@
 	}
 
 	:global(p) {
-		@apply text-lg my-3 mx-4 lg:mx-40 text-center; /* Add smaller margins on mobile */
+		@apply text-lg my-3 mx-4 lg:mx-40 text-left; /* Add smaller margins on mobile */
 	}
 	:global(h1) {
 		@apply shared-properties text-4xl lg:text-6xl from-pink-500 to-violet-500 leading-relaxed;

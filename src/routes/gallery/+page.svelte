@@ -57,4 +57,4 @@
 
 <PageTitle title="Gallery" />
 
-<ImageGallery images={galleryImages} columns={3} gap="1rem" />
+<ImageGallery images={galleryImages} columns={3} />
