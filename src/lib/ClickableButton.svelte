@@ -1,13 +1,23 @@
-<script>
-	export let url = '#'; // The URL to navigate to
-	export let label = ''; // The button text
-	export let imgSrc = ''; // Optional image source
-	export let imgAlt = ''; // Optional image alt text
-	export let classes = ''; // Additional custom classes for styling
+<script lang="ts">
+	interface Props {
+		url?: string; // The URL to navigate to
+		label?: string; // The button text
+		imgSrc?: string; // Optional image source
+		imgAlt?: string; // Optional image alt text
+		classes?: string; // Additional custom classes for styling
+	}
+
+	let {
+		url = '#',
+		label = '',
+		imgSrc = '',
+		imgAlt = '',
+		classes = ''
+	}: Props = $props();
 </script>
 
 <button
-	on:click={() => (window.location.href = url)}
+	onclick={() => (window.location.href = url)}
 	class={`inline-flex items-center p-2 pr-3 sm:pr-0 bg-blue-500 text-white rounded hover:bg-blue-600 ${classes}`}
 >
 	{#if imgSrc}

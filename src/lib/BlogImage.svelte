@@ -1,7 +1,11 @@
 <script lang="ts">
-	export let src: string = ''; // The image source
-	export let alt: string = ''; // Alternative text for the image
-	export let maxWidth: string = '800px'; // Optional maximum width for the image
+	interface Props {
+		src?: string; // The image source
+		alt?: string; // Alternative text for the image
+		maxWidth?: string; // Optional maximum width for the image
+	}
+
+	let { src = '', alt = '', maxWidth = '800px' }: Props = $props();
 </script>
 
 <div class="flex justify-center items-center my-4">

@@ -3,8 +3,8 @@
 	import PageTitle from '$lib/PageTitle.svelte';
 	import Post from '$lib/Post.svelte';
 
-	let posts: UserPost[] = [];
-	let newPost: string = '';
+	let posts: UserPost[] = $state([]);
+	let newPost: string = $state('');
 	function add() {
 		posts = [
 			{
@@ -21,7 +21,7 @@
 <PageTitle title="Tvitr" />
 <div class="justify-center flex pb-3">
 	<input type="text" bind:value={newPost} class="rounded-full text-black p-2" />
-	<button class="pill-button" on:click={add}>Post</button>
+	<button class="pill-button" onclick={add}>Post</button>
 </div>
 <div class="flex flex-wrap">
 	{#each posts as post}

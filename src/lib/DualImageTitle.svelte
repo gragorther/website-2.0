@@ -1,8 +1,17 @@
 <script lang="ts">
-	export let title: string = ''; // Title text
-	export let imgSrc: string = ''; // Image source URL
-	export let imgAlt: string = ''; // Alternate text for the images
-	export let headingLevel: string = 'h2'; // The heading level (e.g., h1, h2, h3)
+	interface Props {
+		title?: string; // Title text
+		imgSrc?: string; // Image source URL
+		imgAlt?: string; // Alternate text for the images
+		headingLevel?: string; // The heading level (e.g., h1, h2, h3)
+	}
+
+	let {
+		title = '',
+		imgSrc = '',
+		imgAlt = '',
+		headingLevel = 'h2'
+	}: Props = $props();
 	const imgclass: string = 'h-10 w-10 object-cover';
 </script>
 

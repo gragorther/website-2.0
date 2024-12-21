@@ -3,9 +3,9 @@
 		text: string;
 		status: boolean;
 	};
-	let newTask: string = '';
+	let newTask: string = $state('');
 
-	let tasks: Task[] = [];
+	let tasks: Task[] = $state([]);
 	function add() {
 		tasks = [
 			...tasks,
@@ -21,7 +21,7 @@
 <div class="justify-center flex">
 	<div>
 		<input type="text" bind:value={newTask} class="rounded-full text-black p-1" />
-		<button on:click={add}>Dodaj</button>
+		<button onclick={add}>Dodaj</button>
 	</div>
 </div>
 <div class="flex justify-center">
@@ -30,7 +30,7 @@
 		{#each tasks as task}
 			<div>
 				<p>
-					<button on:click={() => (task.status = !task.status)}>{task.status ? '✅' : '❌'}</button>
+					<button onclick={() => (task.status = !task.status)}>{task.status ? '✅' : '❌'}</button>
 					{task.text}
 				</p>
 			</div>

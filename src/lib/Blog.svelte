@@ -1,9 +1,19 @@
 <script lang="ts">
-	export let image: string = '';
-	export let title: string = '';
-	export let previewText: string = '';
-	export let link: string = ''; // The URL for the full post
-	export let date: string = '';
+	interface Props {
+		image?: string;
+		title?: string;
+		previewText?: string;
+		link?: string; // The URL for the full post
+		date?: string;
+	}
+
+	let {
+		image = '',
+		title = '',
+		previewText = '',
+		link = '',
+		date = ''
+	}: Props = $props();
 </script>
 
 <div class="flex flex-wrap gap-6 justify-center">

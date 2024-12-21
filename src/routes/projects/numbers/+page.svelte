@@ -1,10 +1,12 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import PageTitle from '$lib/PageTitle.svelte';
 	import ResultBox from '$lib/ResultBox.svelte';
-	let stevilo: number;
-	let sodo: boolean;
-	let vsota: number;
-	let seznamDeliteljev: number[] = [];
+	let stevilo: number = $state();
+	let sodo: boolean = $state();
+	let vsota: number = $state();
+	let seznamDeliteljev: number[] = $state([]);
 
 	function jeSodo(num: number) {
 		return num % 2 == 0;
@@ -27,11 +29,11 @@
 		}
 		return sestevek;
 	}
-	$: {
+	run(() => {
 		sodo = jeSodo(stevilo);
 		seznamDeliteljev = izpisiDeliteljev(stevilo);
 		vsota = vsotaDeliteljev(seznamDeliteljev);
-	}
+	});
 </script>
 
 <PageTitle title="Števila" />

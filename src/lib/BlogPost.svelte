@@ -1,6 +1,11 @@
 <script lang="ts">
-	export let title: string;
-	export let date: string;
+	interface Props {
+		title: string;
+		date: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { title, date, children }: Props = $props();
 </script>
 
 <div class="prose prose-invert max-w-5xl mx-auto p-4 bg-gray-800 rounded-lg shadow-lg">
@@ -18,6 +23,6 @@
 
 	<!-- Blog Content -->
 	<div>
-		<slot />
+		{@render children?.()}
 	</div>
 </div>

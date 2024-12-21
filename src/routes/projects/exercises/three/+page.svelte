@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import PageTitle from '$lib/PageTitle.svelte';
 
 	/**
@@ -23,9 +25,9 @@
 		price: number;
 	};
 	// Priprava spremenljivk
-	let items: Item[] = [{ name: 'Banana', price: 10 }]; // seznam vseh izdelkov
-	let newItemName = ''; // ime novega izdelka
-	let newItemPrice = 0; // cena novega izdelka
+	let items: Item[] = $state([{ name: 'Banana', price: 10 }]); // seznam vseh izdelkov
+	let newItemName = $state(''); // ime novega izdelka
+	let newItemPrice = $state(0); // cena novega izdelka
 
 	// Ustvarimo funkcijo, ki bo dodajala nove izdelke v seznam:
 	function add() {
@@ -49,10 +51,10 @@
 		return sestevek;
 	}
 
-	let total = 0;
-	$: {
+	let total = $state(0);
+	run(() => {
 		total = sumItemsPrice(items);
-	}
+	});
 </script>
 
 <PageTitle title="Shopping list" />
@@ -73,7 +75,7 @@
 		<input type="number" bind:value={newItemPrice} class="rounded-full text-black p-2" />
 	</div>
 	<div>
-		<button class="pill-button" on:click={add}>Add</button>
+		<button class="pill-button" onclick={add}>Add</button>
 	</div>
 </div>
 

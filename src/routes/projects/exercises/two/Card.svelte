@@ -1,7 +1,11 @@
 <script lang="ts">
 	import type { Category } from './data';
 
-	export let category: Category;
+	interface Props {
+		category: Category;
+	}
+
+	let { category }: Props = $props();
 </script>
 
 <div class="border-2 border-pink-400 rounded-2xl max-w-xs overflow-auto">

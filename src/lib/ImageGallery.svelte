@@ -1,6 +1,10 @@
 <script lang="ts">
-	export let images: { src: string; alt: string }[] = [];
-	export let columns: number = 3;
+	interface Props {
+		images?: { src: string; alt: string }[];
+		columns?: number;
+	}
+
+	let { images = [], columns = 3 }: Props = $props();
 	export const gap: string = '1rem';
 </script>
 

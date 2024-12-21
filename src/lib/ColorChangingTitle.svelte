@@ -1,7 +1,15 @@
+<script lang="ts">
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
+</script>
+
 <h
 	class="text-6xl lg:text-7xl from-pink-500 to-violet-500 leading-relaxed bg-gradient-to-r text-transparent bg-clip-text font-extrabold mx-auto my-5 text-center p-2 animate-gradient"
 >
-	<slot />
+	{@render children?.()}
 </h>
 
 <style>

@@ -9,7 +9,7 @@
 	 *  - Dodaj <button> s tekstom "Random"
 	 *  - Po kliku na "Random" naj se num nastavi na naključno število med 1 in 100000000
 	 */
-  let num: number;
+  let num: number = $state();
   function isEven(input: number){
     if(input%2==0){
       return "even";
