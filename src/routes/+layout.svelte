@@ -5,6 +5,7 @@
 	injectSpeedInsights();
 	import '../app.css';
 	import ResultBox from '$lib/ResultBox.svelte';
+	import DualImage from '$lib/DualImage.svelte';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
@@ -35,8 +36,12 @@
 			The source code for this website is available on
 			<a
 				href="https://github.com/gragorther/website-2.0"
-				class="text-white hover:text-white bg-purple-400 text-sm rounded-full p-1 hover:bg-purple-500"
-				>my GitHub page</a
+				class="text-white hover:text-white bg-purple-400 text-base rounded-full p-1 hover:bg-purple-500 flex items-stretch"
+				target="_blank"
+				>my <DualImage
+					imgSrc="/Octicons-mark-github.svg
+">GitHub</DualImage
+				>page</a
 			>
 		</ResultBox>
 	</div>
