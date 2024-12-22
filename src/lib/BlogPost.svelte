@@ -8,7 +8,7 @@
 	let { title, date, children }: Props = $props();
 </script>
 
-<div class="prose prose-invert max-w-5xl mx-auto p-4 bg-gray-800 rounded-lg shadow-lg">
+<div class="prose prose-invert max-w-5xl mx-auto p-4 bg-gray-800 rounded-lg shadow-lg font-sans">
 	<!-- Blog Post Header -->
 	<header class="border-b border-gray-700 pb-4 mb-4">
 		<title>Gregtech - {title}</title>

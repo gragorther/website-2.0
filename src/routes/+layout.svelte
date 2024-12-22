@@ -4,6 +4,7 @@
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	injectSpeedInsights();
 	import '../app.css';
+	import ResultBox from '$lib/ResultBox.svelte';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
@@ -25,10 +26,20 @@
 		<a href="/projects" class={navclass}>Projects</a>
 	</div>
 </nav>
-<div class="min-h-screen flex flex-col">
-	<main class="flex-grow pb-10">
+<div class="min-h-screen flex flex-col pb-16">
+	<main class="flex-grow">
 		{@render children?.()}
 	</main>
+	<div class="flex justify-center text-sm pb-8 mt-2">
+		<ResultBox>
+			The source code for this website is available on
+			<a
+				href="https://github.com/gragorther/website-2.0"
+				class="text-white hover:text-white bg-purple-400 text-sm rounded-full p-1 hover:bg-purple-500"
+				>my GitHub page</a
+			>
+		</ResultBox>
+	</div>
 </div>
 
 <style lang="postcss">
@@ -40,11 +51,11 @@
 		}
 	}
 	:global(body) {
-		@apply bg-zinc-900;
+		@apply bg-zinc-900 text-white font-mono text-center;
 	}
-	:global(*) {
+	/* :global(*) {
 		@apply text-white;
-	}
+	} */
 
 	:global(p) {
 		@apply text-lg my-3 mx-4 lg:mx-40 text-left; /* Add smaller margins on mobile */
@@ -53,7 +64,7 @@
 		@apply shared-properties text-4xl lg:text-6xl from-pink-500 to-violet-500 leading-relaxed;
 	}
 	:global(a) {
-		@apply text-lg lg:text-xl text-blue-400 hover:text-blue-200;
+		@apply text-lg lg:text-xl text-blue-600 hover:text-blue-400;
 	}
 	:global(h2) {
 		@apply shared-properties text-3xl lg:text-4xl from-orange-500 to-pink-700 leading-relaxed;
@@ -70,9 +81,7 @@
 	}
 
 	/* Make navigation adapt to smaller screens */
-	:global(nav div) {
-		@apply flex flex-wrap gap-2; /* Allow wrapping and spacing for smaller screens */
-	}
+
 	:global(li) {
 		@apply mx-4 text-lg;
 	}

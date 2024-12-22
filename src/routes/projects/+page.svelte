@@ -4,7 +4,7 @@
 </script>
 
 <PageTitle title="Projects" />
-<p>Stuff I made at a coding class</p>
+<p class="text-center">Stuff I made at a coding class</p>
 <ul>
 	<div class="flex flex-wrap gap-2 justify-center">
 		<li><ClickableButton url="/projects/writer" label="Writer" /></li>
