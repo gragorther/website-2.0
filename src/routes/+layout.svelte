@@ -6,25 +6,22 @@
 	import '../app.css';
 	import ResultBox from '$lib/ResultBox.svelte';
 	import DualImage from '$lib/DualImage.svelte';
+	import NavButton from '$lib/NavButton.svelte';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
-
 	let { children }: Props = $props();
-
-	let navclass =
-		'rounded-lg bg-purple-400 text-xl p-2 text-center hover:bg-purple-700 text-white flex-grow mr-2 sm:text-lg sm:p-3 lg:text-xl lg:p-0 ';
 </script>
 
 <nav class="rounded-lg m-4">
 	<!-- Use flex-wrap to handle wrapping on smaller screens -->
 	<div class="content-center flex flex-wrap justify-evenly gap-2">
-		<a href="/" class={navclass}>Home</a>
-		<a href="/contact" class={navclass}>Contact</a>
-		<a href="/gallery" class={navclass}>Gallery</a>
-		<a href="/blog" class={navclass}>Blog</a>
-		<a href="/stuff_i_host" class={navclass}>Stuff I host</a>
-		<a href="/projects" class={navclass}>Projects</a>
+		<NavButton href="/">Home</NavButton>
+		<NavButton href="/contact">Contact</NavButton>
+		<NavButton href="/gallery">Gallery</NavButton>
+		<NavButton href="/blog">Blog</NavButton>
+		<NavButton href="/stuff_i_host">Stuff I host</NavButton>
+		<NavButton href="/projects">Projects</NavButton>
 	</div>
 </nav>
 <div class="min-h-screen flex flex-col pb-16">
