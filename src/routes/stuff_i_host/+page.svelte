@@ -1,5 +1,6 @@
 <script>
 	import ClickableButton from '$lib/ClickableButton.svelte';
+	import DualImage from '$lib/DualImage.svelte';
 	import PageTitle from '$lib/PageTitle.svelte';
 </script>
 
@@ -8,20 +9,14 @@
 <ul>
 	<div class="flex flex-wrap gap-2 justify-center">
 		<li>
-			<ClickableButton
-				url="https://gregtech.eu"
-				label="Lemmy"
-				imgSrc="lemmy.svg"
-				imgAlt="Lemmy logo"
-			/>
+			<ClickableButton href="https://gregtech.eu"
+				><DualImage imgSrc="/lemmy.png">Lemmy</DualImage></ClickableButton
+			>
 		</li>
 		<li>
-			<ClickableButton
-				url="https://search.gregtech.eu"
-				label="SearXNG"
-				imgSrc="searxng-wordmark.svg"
-				imgAlt="SearXNG logo"
-			/>
+			<ClickableButton href="https://search.gregtech.eu"
+				><DualImage imgSrc="/searxng-wordmark.svg">SearXNG</DualImage></ClickableButton
+			>
 		</li>
 	</div>
 </ul>
@@ -29,20 +24,14 @@
 <ul>
 	<div class="flex flex-wrap gap-2 justify-center">
 		<li>
-			<ClickableButton
-				url="https://vaultwarden.gregtech.eu"
-				label="Vaultwarden"
-				imgSrc="vaultwarden.png"
-				imgAlt="Vaultwarden logo"
-			/>
+			<ClickableButton href="https://vaultwarden.gregtech.eu"
+				><DualImage imgSrc="/vaultwarden.png">Vaultwarden</DualImage></ClickableButton
+			>
 		</li>
 		<li>
-			<ClickableButton
-				url="https://app.element.io"
-				label="Matrix"
-				imgSrc="matrix.svg"
-				imgAlt="Matrix logo"
-			/>
+			<ClickableButton href="https://app.element.io"
+				><DualImage imgSrc="/matrix.svg">Matrix</DualImage></ClickableButton
+			>
 		</li>
 	</div>
 </ul>

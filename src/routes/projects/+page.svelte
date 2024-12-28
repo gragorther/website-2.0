@@ -7,16 +7,16 @@
 <p class="text-center">Stuff I made at a coding class</p>
 <ul>
 	<div class="flex flex-wrap gap-2 justify-center">
-		<li><ClickableButton url="/projects/writer" label="Writer" /></li>
+		<li><ClickableButton href="/projects/writer">Writer</ClickableButton></li>
 		<li>
-			<ClickableButton url="/projects/to-do" label="To-do list" />
+			<ClickableButton href="/projects/to-do">To-Do list</ClickableButton>
 		</li>
 		<li>
-			<ClickableButton url="/projects/numbers" label="Info about a number" />
+			<ClickableButton href="/projects/numbers">Numbers</ClickableButton>
 		</li>
 		<li>
-			<ClickableButton url="/projects/tvitr" label="Tvitr"></ClickableButton>
+			<ClickableButton href="/projects/tvitr">Tvitr</ClickableButton>
 		</li>
-		<li><ClickableButton url="/projects/exercises" label="Exercises" /></li>
+		<li><ClickableButton href="/projects/exercises">Exercises</ClickableButton></li>
 	</div>
 </ul>
