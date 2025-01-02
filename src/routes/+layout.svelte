@@ -14,7 +14,6 @@
 </script>
 
 <nav class="rounded-lg m-4">
-	<!-- Use flex-wrap to handle wrapping on smaller screens -->
 	<div class="content-center flex flex-wrap justify-evenly gap-2">
 		<NavButton href="/">Home</NavButton>
 		<NavButton href="/contact">Contact</NavButton>
@@ -54,35 +53,44 @@
 	}
 	:global(body) {
 		@apply bg-zinc-900 text-white font-mono text-center;
+		background-image: url('/coolbg.png');
+		background-size: 200px;
 	}
-	/* :global(*) {
-		@apply text-white;
-	} */
 
+	/* Target only <p> elements to scale */
 	:global(p) {
-		@apply text-lg my-3 mx-4 lg:mx-40 text-center; /* Add smaller margins on mobile */
+		@apply text-lg my-3 mx-auto text-justify;
+		max-width: 800px; /* Ensure paragraphs scale within a readable width */
+		padding: 0 1rem; /* Add horizontal padding for smaller screens */
 	}
+
 	:global(h1) {
 		@apply shared-properties text-4xl lg:text-6xl from-pink-500 to-violet-500 leading-relaxed;
 	}
+
 	:global(a) {
 		@apply text-lg lg:text-xl text-blue-600 hover:text-blue-400;
 	}
+
 	:global(h2) {
 		@apply shared-properties text-3xl lg:text-4xl from-orange-500 to-pink-700 leading-relaxed;
 	}
 
-	/* Buttons and navigation */
-	:global(.pill-button) {
-		@apply text-white hover:text-white bg-purple-400 rounded-full px-4 py-2 mt-2 hover:bg-purple-500;
+	/* Ensure nav buttons remain the same */
+	:global(.nav-button) {
+		@apply border-solid border-white border-2 rounded-sm bg-red-600 p-3 text-center hover:bg-red-400 text-white;
+		width: auto;
 	}
 
-	/* Responsive navigation layout */
+	/* Keep pill buttons unaffected */
+	:global(.pill-button) {
+		@apply text-white hover:text-white bg-purple-400 rounded-full px-4 py-2 hover:bg-purple-500;
+	}
+
+	/* List and Navigation adjustments */
 	:global(ul) {
 		@apply flex flex-row items-center justify-center;
 	}
-
-	/* Make navigation adapt to smaller screens */
 
 	:global(li) {
 		@apply mx-4 text-lg;
