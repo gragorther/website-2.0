@@ -53,8 +53,6 @@
 	}
 	:global(body) {
 		@apply bg-zinc-900 text-white font-mono text-center;
-		background-image: url('/coolbg.png');
-		background-size: 200px;
 	}
 
 	/* Target only <p> elements to scale */
