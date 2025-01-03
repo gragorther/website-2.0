@@ -10,8 +10,8 @@
 
 <div class="flex items-center justify-center gap-0">
 	<!-- Left Image -->
-	<img src={imgSrc} alt={imgAlt} class="ml-1 mr-0.5 object-fill h-5 w-5" />
+	<img src={imgSrc} alt={imgAlt} class="ml-1 mr-0.5 object-fill h-5 w-5 rounded-md" />
 	{@render children?.()}
 	<!-- Right Image -->
-	<img src={imgSrc} alt={imgAlt} class="mr-1 ml-0.5 object-fill h-5 w-5" />
+	<img src={imgSrc} alt={imgAlt} class="mr-1 ml-0.5 object-fill h-5 w-5 rounded-md" />
 </div>

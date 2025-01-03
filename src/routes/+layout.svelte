@@ -87,7 +87,7 @@
 
 	/* List and Navigation adjustments */
 	:global(ul) {
-		@apply flex flex-row items-center justify-center;
+		@apply content-center flex flex-wrap justify-center gap-2;
 	}
 
 	:global(li) {

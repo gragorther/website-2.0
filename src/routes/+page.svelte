@@ -1,4 +1,6 @@
 <script>
+	import ClickableButton from '$lib/ClickableButton.svelte';
+	import DualImage from '$lib/DualImage.svelte';
 	import PageTitle from '$lib/PageTitle.svelte';
 </script>
 
@@ -14,3 +16,28 @@
 	an account on Lemmy, you can do so without my permission, but for Matrix you would have to contact
 	me. I host it all at Hetzner in Helsinki, but my Minecraft server is hosted on a Raspberry Pi at home.
 </p>
+<h2>Other cool websites</h2>
+<ul>
+	<li>
+		<ClickableButton href="https://tsugu.xyz"
+			><DualImage imgSrc="https://tsugu.xyz/images/favicon.png" imgAlt="Tsugu logo">Tsugu</DualImage
+			></ClickableButton
+		>
+	</li>
+	<li>
+		<ClickableButton href="https://suricrasia.online/iceberg/"
+			><DualImage imgSrc="https://suricrasia.online/favicon.ico">Programming iceberg</DualImage
+			></ClickableButton
+		>
+	</li>
+	<li>
+		<ClickableButton href="https://landchad.net/"
+			><DualImage imgSrc="https://landchad.net/favicon.ico">Landchad</DualImage></ClickableButton
+		>
+	</li>
+	<li>
+		<ClickableButton href="https://popey.com/blog/"
+			><DualImage imgSrc="/popey.ico">Popey blog</DualImage></ClickableButton
+		>
+	</li>
+</ul>
