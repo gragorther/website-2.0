@@ -20,19 +20,17 @@
 <ul>
 	<li>
 		<ClickableButton href="https://tsugu.xyz"
-			><DualImage imgSrc="https://tsugu.xyz/images/favicon.png" imgAlt="Tsugu logo">Tsugu</DualImage
-			></ClickableButton
+			><DualImage imgSrc="/tsugulogo.png" imgAlt="Tsugu logo">Tsugu</DualImage></ClickableButton
 		>
 	</li>
 	<li>
 		<ClickableButton href="https://suricrasia.online/iceberg/"
-			><DualImage imgSrc="https://suricrasia.online/favicon.ico">Programming iceberg</DualImage
-			></ClickableButton
+			><DualImage imgSrc="/suricrasia.png">Programming iceberg</DualImage></ClickableButton
 		>
 	</li>
 	<li>
 		<ClickableButton href="https://landchad.net/"
-			><DualImage imgSrc="https://landchad.net/favicon.ico">Landchad</DualImage></ClickableButton
+			><DualImage imgSrc="/landchad.png">Landchad</DualImage></ClickableButton
 		>
 	</li>
 	<li>
